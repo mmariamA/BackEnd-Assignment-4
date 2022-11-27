@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "9bcc8fb1-36aa-4f19-924f-35d1a25bdafb",
+		"name": "Backend Assignment 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/patient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Joseph Paul\",\r\n\"cardNo\":\"121212003\",\r\n\"doctorAssigned\":\"Dr Dennis Gordon\",\r\n\"nurseAssigned\":\"Nurse Anne Harry\",\r\n\"Diagnosis\":\"HIV\",\r\n\"DoctorReport\":\"Find in records\",\r\n\"nameOfNextOfKin\":\"Joseph Micheal\",\r\n\"phoneNumberOfNextOfKin\":\"55550199\"}\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/patient",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/patient/638319d995ffa621c790861e",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"name\": \"Jane Doe\",\r\n        \"cardNo\": 121212001,\r\n        \"doctorAssigned\": \"Dr Dennis Gordon\",\r\n        \"nurseAssigned\": \"Nurse Anne Harry\",\r\n        \"Diagnosis\": \"HIV\",\r\n        \"DoctorReport\": \"Awaiting\",\r\n        \"nameOfNextOfKin\": \"John Doe\",\r\n        \"phoneNumberOfNextOfKin\": 55550148\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/patient/638319d995ffa621c790861e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patient",
+						"638319d995ffa621c790861e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
